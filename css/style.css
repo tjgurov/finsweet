@@ -575,6 +575,8 @@ body {
 /*===================================================CTA==================================================================*/
 
 .cta {
+  max-width: 1920px;
+  margin: 0 auto;
   background-image: url(../images/cta/cta-img1.png), url(../images/cta/cta-img2.png);
   background-repeat: no-repeat, no-repeat;
   background-position: left, right;
