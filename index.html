@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.css">
+  <link rel="stylesheet" href="./js/mixitup.min.js">
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/fonts.css">
   <link rel="stylesheet" href="css/reset.css">
@@ -21,7 +22,7 @@
         <div class="header__top">
           <div class="header__top-inner">
             <a href="#" class="header__logo">
-              <img src="./images/header/logo.svg" alt="">
+              <img src="images/header/logo.svg" alt="">
             </a>
             <nav class="header__nav">
               <ul class="header__nav-list">
@@ -385,12 +386,96 @@
         </div>
       </section>
 
+      <section class="main__blog blog">
+        <div class="container">
+          <div class="blog__inner">
+            <h2 class="blog__title title">Our blog</h2>
+            <div class="blog__body">
+              <ul class="blog__filter">
+                <li class="blog__filter-item">
+                  <button class="blog__filter-btn blog__filter-btn--active" type="button" data-filter=".blog__item--latest">Latest</button>
+                </li>
+                <li class="blog__filter-item">
+                  <button class="blog__filter-btn" type="button" data-filter=".blog__item--popular">Popular</button>
+                </li>
+                <li class="blog__filter-item">
+                  <button class="blog__filter-btn" type="button" data-filter=".blog__item--favorites">Favorites</button>
+                </li>
+              </ul>
+              <ul class="blog__list">
+                <li class="mix blog__item blog__item--latest" data-order="1">
+                  <a href="#" class="blog__link">
+                    <img class="blog__item-image" src="./images/blog/blog-img1.png" alt="blog image">
+                    <div class="blog__item-desc">
+                      <div class="blog__item-date">Posted on October 6th 2021</div>
+                      <div class="blog__item-title">5 Genius Car Accessories You Should Never Drive Without</div>
+                      <div class="blog__item-text">We provide a full range of front end mechanical repairs for all makes and models We provide a full range of front end mechanical repairs for all makes and models</div>
+                    </div>
+                  </a>
+                </li>
+                <li class="mix blog__item blog__item--latest blog__item--popular" data-order="2">
+                  <a href="#" class="blog__link">
+                    <img class="blog__item-image" src="./images/blog/blog-img2.png" alt="blog image">
+                    <div class="blog__item-desc">
+                      <div class="blog__item-date">Posted on October 6th 2021</div>
+                      <div class="blog__item-title">5 Genius Car Accessories You Should Never Drive Without</div>
+                      <div class="blog__item-text">We provide a full range of front end mechanical repairs for all makes and models We provide a full range of front end mechanical repairs for all makes and models</div>
+                    </div>
+                  </a>
+                </li>
+                <li class="mix blog__item blog__item--latest blog__item--popular" data-order="3">
+                  <a href="#" class="blog__link">
+                    <img class="blog__item-image" src="./images/blog/blog-img3.png" alt="blog image">
+                    <div class="blog__item-desc">
+                      <div class="blog__item-date">Posted on October 6th 2021</div>
+                      <div class="blog__item-title">We provide blow straight past it with the wheels skidding</div>
+                      <div class="blog__item-text">We provide a full range of front end mechanical repairs for all makes and models We provide a full range of front end mechanical repairs for all makes and models</div>
+                    </div>
+                  </a>
+                </li>
+                <li class="mix blog__item blog__item--latest  blog__item--favorites" data-order="4">
+                  <a href="#" class="blog__link">
+                    <img class="blog__item-image" src="./images/blog/blog-img4.png" alt="blog image">
+                    <div class="blog__item-desc">
+                      <div class="blog__item-date">Posted on October 6th 2021</div>
+                      <div class="blog__item-title">We provide blow straight past it with the wheels skidding</div>
+                      <div class="blog__item-text">We provide a full range of front end mechanical repairs for all makes and models We provide a full range of front end mechanical repairs for all makes and models</div>
+                    </div>
+                  </a>
+                </li>
+                <li class="mix blog__item blog__item--latest blog__item--favorites " data-order="5">
+                  <a href="#" class="blog__link">
+                    <img class="blog__item-image" src="./images/blog/blog-img5.png" alt="blog image">
+                    <div class="blog__item-desc">
+                      <div class="blog__item-date">Posted on October 6th 2021</div>
+                      <div class="blog__item-title">5 Genius Car Accessories You Should Never Drive Without</div>
+                      <div class="blog__item-text">We provide a full range of front end mechanical repairs for all makes and models We provide a full range of front end mechanical repairs for all makes and models</div>
+                    </div>
+                  </a>
+                </li>
+                <li class="mix blog__item blog__item--latest blog__item--popular" data-order="6">
+                  <a href="#" class="blog__link">
+                    <img class="blog__item-image" src="./images/blog/blog-img6.png" alt="blog image">
+                    <div class="blog__item-desc">
+                      <div class="blog__item-date">Posted on October 6th 2021</div>
+                      <div class="blog__item-title">5 Genius Car Accessories You Should Never Drive Without</div>
+                      <div class="blog__item-text">We provide a full range of front end mechanical repairs for all makes and models We provide a full range of front end mechanical repairs for all makes and models</div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div >
+          </div>
+        </div>
+      </section>
+
     </main>
 
   </div>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.js"></script>
-<script src="js/main.js"></script>
+<script src="./js/mixitup.min.js"></script>
+<script src="./js/main.js"></script>
 
 </html>

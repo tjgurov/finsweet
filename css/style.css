@@ -81,6 +81,10 @@ body {
   padding: 128px 0 82px 0;
 }
 
+.main__blog {
+  padding: 130px 0 135px 0;
+}
+
 /*===================================================HEADER==================================================================*/
 /*===================================================HEADER==================================================================*/
 
@@ -615,10 +619,12 @@ body {
   justify-content: space-between;
   padding: 48px 0;
 }
+
 .experience__title {
   text-align-last: left;
   color: #661CE7;
 }
+
 .experience__text {
   text-align: center;
   font-size: 24px;
@@ -633,19 +639,100 @@ body {
 .brands {
   background-color: #E2E6E9;
 }
+
 .brands__title {
   margin-bottom: 31px;
 }
+
 .brands__list {
   display: grid;
-  grid-template: repeat(2, auto) / repeat(5, 1fr) ;
+  grid-template: repeat(2, auto) / repeat(5, 1fr);
   gap: 38px;
 }
+
 .brands__item path {
   opacity: .8;
   transition: all .3s;
 }
+
 .brands__item:hover path {
   fill: #FF6433;
   opacity: 1;
+}
+
+/*===================================================BLOG==================================================================*/
+/*===================================================BLOG==================================================================*/
+
+
+.blog {}
+
+.blog__inner {}
+
+.blog__title {
+  text-align: left;
+  margin-bottom: 47px;
+}
+
+.blog__filter {
+  display: flex;
+  margin-bottom: 46px;
+}
+
+.blog__filter-item {
+  margin-right: 30px;
+}
+
+.blog__filter-item:last-child {
+  margin-right: 0;
+}
+
+
+.blog__filter-btn {
+  font-weight: 700;
+  font-size: 32px;
+  letter-spacing: -0.03em;
+  background-color: #fff;
+}
+.blog__filter-btn--active {
+  color: #FF6433;
+  transform: scale(1.1);
+}
+
+.blog__list {
+  display: grid;
+  grid-template: repeat(2, auto) / repeat(3, 1fr);
+  gap: 64px 32px;
+}
+
+.blog__item {
+  transition: all 1s;
+}
+
+.blog__item:hover {
+  box-shadow: 5px 4px 20px -8px rgba(30, 27, 27, 0.2);
+  transition: all .3s;
+}
+
+.blog__item-image {
+  padding-bottom: 24px;
+}
+
+.blog__item-date {
+  line-height: 175%;
+  color: #939191;
+  padding-bottom: 16px;
+}
+
+.blog__item-title {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 48px;
+  letter-spacing: -0.03em;
+  padding-bottom: 16px;
+}
+
+.blog__item-text {
+  line-height: 175%;
+  color: #232536;
+  padding-bottom: 8px;
 }
