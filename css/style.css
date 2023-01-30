@@ -89,6 +89,10 @@ body {
   padding: 128px 0;
 }
 
+.main__faq {
+  padding: 128px 0;
+}
+
 /*===================================================HEADER==================================================================*/
 /*===================================================HEADER==================================================================*/
 
@@ -745,10 +749,12 @@ body {
 .testimonials {
   background: #F2F2F2;
 }
+
 .testimonials__slider {
   position: relative;
   background-color: #f2f2f2;
 }
+
 .testimonials__title {
   max-width: 900px;
   margin: 0 auto 76px;
@@ -758,9 +764,9 @@ body {
   max-width: 616px;
   padding: 72px;
   background: #FFFFFF;
-border: 1px solid rgba(172, 172, 172, 0.29);
-box-shadow: 11px 130px 100px 30px rgba(0, 0, 0, 0.02);
-border-radius: 6px;
+  border: 1px solid rgba(172, 172, 172, 0.29);
+  box-shadow: 11px 130px 100px 30px rgba(0, 0, 0, 0.02);
+  border-radius: 6px;
 }
 
 .testimonials__person {
@@ -775,11 +781,11 @@ border-radius: 6px;
 
 .testimonials__person-name {
   font-size: 24px;
-letter-spacing: -0.03em;
+  letter-spacing: -0.03em;
 }
 
 .testimonials__person-location {
-color: #939191;
+  color: #939191;
 }
 
 .testimonials__text {
@@ -787,6 +793,7 @@ color: #939191;
   line-height: 36px;
   letter-spacing: -0.03em;
 }
+
 .testimonials__pagination {
   display: flex;
   margin-top: 47px;
@@ -800,11 +807,11 @@ color: #939191;
   display: inline-block;
   border-radius: 0;
   border: 2px solid #939191;
-  background: var(--swiper-pagination-bullet-inactive-color,#000);
   opacity: 1;
   margin-right: 15px;
   cursor: pointer;
 }
+
 .swiper-pagination-bullet-active {
   opacity: 1;
   border: 2px solid #FF6433;
@@ -817,12 +824,16 @@ color: #939191;
   margin-top: -28px;
 }
 
-.swiper-button-next, .swiper-button-prev {
+.swiper-button-next,
+.swiper-button-prev {
   display: none;
 }
-.swiper-button-next:after, .swiper-button-prev:after {
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
   display: none;
 }
+
 .testimonials__prev {
   width: 48px;
   height: 48px;
@@ -835,6 +846,7 @@ color: #939191;
   border-radius: 50%;
   transition: all .3s;
 }
+
 .testimonials__next {
   width: 48px;
   height: 48px;
@@ -847,11 +859,104 @@ color: #939191;
   transition: all .3s;
 }
 
-.testimonials__next:hover, .testimonials__prev:hover {
+.testimonials__next:hover,
+.testimonials__prev:hover {
   background-color: #1E1B1B;
   transform: scale(1.05);
 }
-.testimonials__next:hover path, .testimonials__prev:hover path {
+
+.testimonials__next:hover path,
+.testimonials__prev:hover path {
   fill: #F2F2F2;
   transform: scale(1.05);
+}
+
+/*===================================================FAQ==================================================================*/
+/*===================================================FAQ==================================================================*/
+
+
+.faq {
+  background-color: #E2E6E9;
+}
+
+.faq__title {
+  margin-bottom: 86px;
+}
+
+.faq__list {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.faq__item {
+  background-color: #fff;
+  margin-bottom: 12px;
+  padding: 40px;
+  cursor: pointer;
+  position: relative;
+}
+
+.faq__link {
+  display: flex;
+  flex-direction: column;
+}
+
+.faq__heading {
+  margin-bottom: 24px;
+  font-size: 24px;
+  letter-spacing: -0.03em;
+  margin-top: -36px;
+
+}
+.faq__square {
+  display: inline-block;
+  position: relative;
+  width: 51px;
+  height: 48px;
+  background-color: #FF6433;
+  align-self: end;
+}
+
+.faq__square:before {
+  content: "";
+  width: 17px;
+  display: block;
+  background-color: #fff;
+  border: 1px solid #FFFFFF;
+  top: 25px;
+  left: 17px;
+  position: absolute;
+}
+.faq__square::after {
+  content: "";
+  width: 17px;
+  display: block;
+  background-color: #fff;
+  border: 1px solid #FFFFFF;
+  top: 25px;
+  left: 17px;
+  position: absolute;
+  transform: rotate(90deg);
+  transition: all .5s;
+}
+
+.faq__text {
+  font-size: 18px;
+  line-height: 175%;
+  color: #939191;
+  max-width: 700px;
+  max-height: 0px;
+  overflow: hidden;
+  transition: all .5s;
+}
+
+.faq__link--active .faq__square::after {
+
+  transform: rotate(0deg);
+  transition: all .3s;
+}
+.faq__link--active .faq__text {
+  max-height: 200px;
+  max-width: 650px;
+  transition: all .3s;
 }

@@ -41,6 +41,16 @@ $(function () {
       prevEl: '.testimonials__prev',
 
     },
+  });
+
+  /*==================ACCORDEON======================*/
+
+  document.querySelectorAll('.faq__link').forEach((item) =>
+  item.addEventListener('click', () => {
+    const parent = item.parentNode;
+
+    parent.classList.toggle('faq__link--active');
   })
+);
 
 });
