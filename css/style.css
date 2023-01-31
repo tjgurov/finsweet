@@ -123,6 +123,7 @@ body {
 .header__nav {
   display: flex;
   padding-right: 32px;
+  align-items: center;
 }
 
 .header__nav-list {
@@ -130,6 +131,7 @@ body {
   align-items: center;
   font-size: 16px;
   line-height: 28px;
+  white-space: nowrap;
 }
 
 .header__nav-item {
@@ -180,6 +182,7 @@ body {
   padding: 0 15px;
   display: flex;
   align-items: center;
+  white-space: nowrap;
 }
 
 .assistance__stripe {
@@ -807,9 +810,10 @@ body {
 
 .swiper-pagination-bullet {
   width: 32px;
-  height: 0;
+  height: 4px;
   display: inline-block;
   border-radius: 0;
+  background-color: #939191;
   border: 2px solid #939191;
   opacity: 1;
   margin-right: 15px;
@@ -818,6 +822,7 @@ body {
 
 .swiper-pagination-bullet-active {
   opacity: 1;
+  background-color: #FF6433;
   border: 2px solid #FF6433;
 }
 
@@ -1151,8 +1156,6 @@ body {
   align-items: center;
   justify-content: space-between;
 }
-
-.footer__logo {}
 
 .footer__nav {
   color: #fff;

@@ -1,0 +1,25 @@
+
+@media (max-width:1100px) {
+  .header__bottom-inner {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .header__image {
+    margin-bottom: 32px;
+  }
+  .header__title {
+    font-size: 52px;
+  }
+}
+
+@media (max-width:900px) {
+  .header__image {
+    display: none;
+  }
+  .header__nav {
+    display: none;
+  }
+  .header__top {
+    padding: 0;
+  }
+}
