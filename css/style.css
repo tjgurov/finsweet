@@ -44,6 +44,17 @@ body {
   transform: scale(1.05);
 }
 
+.burger {
+  display: none;
+}
+
+.burger--open {
+  display: none;
+  top: 27px;
+  right: 15px;
+  position: fixed;
+}
+
 .title {
   font-weight: 800;
   font-size: 58px;
