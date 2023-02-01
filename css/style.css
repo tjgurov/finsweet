@@ -13,6 +13,9 @@ body {
   font-weight: 600;
   line-height: 150%;
 }
+body._lock {
+  overflow: hidden;
+}
 
 .wrapper {
   min-height: 100%;
@@ -48,11 +51,20 @@ body {
   display: none;
 }
 
-.burger--open {
-  display: none;
-  top: 27px;
-  right: 15px;
-  position: fixed;
+.burger._active span {
+  transform: scale(0);
+}
+.burger._active::after {
+  position: absolute;
+  background-color: #fff;
+  top: 50%;
+  transform: rotate(-45deg) translateY(-50%);
+}
+.burger._active::before {
+  position: absolute;
+  background-color: #fff;
+  bottom: 50%;
+  transform: rotate(45deg) translateY(50%);
 }
 
 .title {
@@ -133,7 +145,6 @@ body {
 
 .header__nav {
   display: flex;
-  padding-right: 32px;
   align-items: center;
 }
 

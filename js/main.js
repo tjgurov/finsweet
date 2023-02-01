@@ -53,4 +53,24 @@ $(function () {
   })
 );
 
+  /*==================BURGER======================*/
+  const burgerMenu = document.querySelector('.burger');
+  const navMenu = document.querySelector('.header__nav');
+  if(burgerMenu) {
+    burgerMenu.addEventListener('click', function(e){
+      document.body.classList.toggle('_lock')
+      burgerMenu.classList.toggle('_active');
+      navMenu.classList.toggle('_active');
+    });
+  }
+
+  setInterval(() => {
+    if  ($(window).scrollTop() > 0 && $('.header__nav').hasClass('_active') === false) {
+      $('.burger').addClass('burger--follow')
+    }
+    else {
+      $('.burger').removeClass('burger--follow')
+    }
+  }, 0);
+
 });
