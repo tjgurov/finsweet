@@ -417,13 +417,10 @@ body._lock {
   text-align: center;
   margin-bottom: 32px;
   gap: 8px;
-  max-width: 100%;
-  max-height: 472px;
 }
 
 .offer__item {
   background-color: #fff;
-  height: 232px;
   transition: all .5s;
 }
 
@@ -448,8 +445,6 @@ body._lock {
 }
 
 .offer__link {
-  width: 100%;
-  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
