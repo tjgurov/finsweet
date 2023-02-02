@@ -31,7 +31,6 @@ $(function () {
     spaceBetween: 48,
     slidesPerView: 2,
 
-
     pagination: {
       el: '.testimonials__pagination',
       clickable: true
@@ -39,8 +38,19 @@ $(function () {
     navigation: {
       nextEl: '.testimonials__next',
       prevEl: '.testimonials__prev',
-
     },
+
+    breakpoints: {
+      // when window width is >= 320px
+      320: {
+        slidesPerView: 1
+      },
+      // when window width is >= 1000px
+      1000: {
+        slidesPerView: 2,
+      }
+    }
+
   });
 
   /*==================ACCORDEON======================*/

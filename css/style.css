@@ -49,6 +49,7 @@ body._lock {
 
 .burger {
   display: none;
+  cursor: pointer;
 }
 
 .burger._active span {
@@ -679,7 +680,12 @@ body._lock {
 .brands__list {
   display: grid;
   grid-template: repeat(2, auto) / repeat(5, 1fr);
+  text-align: center;
   gap: 38px;
+}
+
+.brands__link svg {
+  width: 100%;
 }
 
 .brands__item path {
@@ -691,6 +697,7 @@ body._lock {
   fill: #FF6433;
   opacity: 1;
 }
+
 
 /*===================================================BLOG==================================================================*/
 /*===================================================BLOG==================================================================*/
@@ -736,6 +743,9 @@ body._lock {
 .blog__item {
   transition: all 1s;
 }
+.blog__link {
+  width: 100%;
+}
 
 .blog__item:hover {
   box-shadow: 5px 4px 20px -8px rgba(30, 27, 27, 0.2);
@@ -744,6 +754,10 @@ body._lock {
 
 .blog__item-image {
   padding-bottom: 24px;
+  width: 100%;
+}
+.blog__item-desc {
+  width: 100%;
 }
 
 .blog__item-date {
@@ -1071,6 +1085,7 @@ body._lock {
   line-height: 36px;
   letter-spacing: -0.03em;
   display: block;
+  white-space: inherit;
 }
 
 .contacts__body {
