@@ -69,18 +69,20 @@ $(function () {
   if(burgerMenu) {
     burgerMenu.addEventListener('click', function(e){
       document.body.classList.toggle('_lock')
-      burgerMenu.classList.toggle('_active');
+      // burgerMenu.classList.toggle('_active');
       navMenu.classList.toggle('_active');
     });
   }
 
-  setInterval(() => {
+  $(window).on('scroll', function(){
     if  ($(window).scrollTop() > 0 && $('.header__nav').hasClass('_active') === false) {
       $('.burger').addClass('burger--follow')
     }
     else {
       $('.burger').removeClass('burger--follow')
     }
-  }, 0);
+  })
+    
+
 
 });
