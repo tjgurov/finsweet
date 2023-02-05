@@ -82,8 +82,16 @@ $(function () {
     } else {
       $('.burger').removeClass('burger--follow')
     }
-    
+
+    $('.burger').on('click' , function(e) {
+      e.preventDefault()
+      $('.header__nav').toggleClass('_active')
+      $('.burger').toggleClass('_active')
+      $('.burger').removeClass('burger--follow')
+
+    });
   });
+  
   
 
     /*==================LINKS======================*/
@@ -100,12 +108,13 @@ $(function () {
           const gotoBLock = document.querySelector(navLink.dataset.goto);
           const gotoBLockValue = gotoBLock.getBoundingClientRect().top + scrollY - document.querySelector('.header__nav-item').offsetHeight;
 
+
           if (burgerMenu.classList.contains('_active')) {
             document.body.classList.remove('_lock');
             burgerMenu.classList.remove('_active');
             navMenu.classList.remove('_active');
           }
-
+          
           window.scrollTo({
             top: gotoBLockValue,
             behavior: "smooth"
@@ -114,7 +123,5 @@ $(function () {
         }
       }
     }
-
     
-
 });
