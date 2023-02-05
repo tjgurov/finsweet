@@ -69,7 +69,7 @@ $(function () {
   if(burgerMenu) {
     burgerMenu.addEventListener('click', function(e){
       document.body.classList.toggle('_lock')
-      // burgerMenu.classList.toggle('_active');
+      burgerMenu.classList.toggle('_active');
       navMenu.classList.toggle('_active');
     });
   }
