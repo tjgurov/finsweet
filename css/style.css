@@ -172,13 +172,13 @@ body._lock {
   margin-right: 0;
 }
 
-.header__nav-link {
+.header__link {
   transition: all .5s;
   text-decoration: none;
   position: relative;
 }
 
-.header__nav-link::after {
+.header__link::after {
   content: "";
   display: block;
   position: absolute;
@@ -190,12 +190,12 @@ body._lock {
   transition: width 0.5s;
 }
 
-.header__nav-link:hover {
+.header__link:hover {
   color: #FF6433;
   transition: all .3s;
 }
 
-.header__nav-link:hover:after {
+.header__link:hover:after {
   content: "";
   width: 100%;
   display: block;

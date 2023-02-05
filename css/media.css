@@ -144,7 +144,7 @@
     margin-bottom: 0;
   }
 
-  .header__nav-link {
+  .header__link {
     font-size: 24px;
     color: #fff;
   }
@@ -153,7 +153,7 @@
     display: none;
   }
 
-  .header__nav-link::after {
+  .header__link::after {
     background-color: #fff;
   }
 

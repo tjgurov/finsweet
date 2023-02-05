@@ -19,7 +19,7 @@
 <body>
   <div class="wrapper">
     <div class="overlay"></div>
-    <header class="header">
+    <header class="header" id="home">
       <a class="burger">
         <span></span>
       </a>
@@ -37,19 +37,19 @@
             <nav class="header__nav">
               <ul class="header__nav-list">
                 <li class="header__nav-item">
-                  <a href="#" class="header__nav-link">Home</a>
+                  <a data-goto="#home" href="#" class="header__link">Home</a>
                 </li>
                 <li class="header__nav-item">
-                  <a href="#" class="header__nav-link">About us</a>
+                  <a data-goto="#faq" href="#" class="header__link">About us</a>
                 </li>
                 <li class="header__nav-item">
-                  <a href="#services" class="header__nav-link">Services</a>
+                  <a data-goto="#services" href="#" class="header__link">Services</a>
                 </li>
                 <li class="header__nav-item">
-                  <a href="#blog" class="header__nav-link">Blog</a>
+                  <a data-goto="#blog" href="#" class="header__link">Blog</a>
                 </li>
                 <li class="header__nav-item">
-                  <a href="#contact" class="header__nav-link">Contact</a>
+                  <a data-goto="#contact" href="#" class="header__link">Contact</a>
                 </li>
               </ul>
               <div class="header__assistance">
@@ -764,7 +764,7 @@
         </div>
       </section>
 
-      <section class="main__faq faq">
+      <section class="main__faq faq" id="faq">
         <div class="container">
           <h2 class="faq__title title">
             Frequently Asked Questions
