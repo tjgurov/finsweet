@@ -211,6 +211,8 @@
 
   /*---------------------------------------------*/
 
+
+  /*---------------------------------------------*/
   .contacts__inner {
     flex-direction: column;
   }
@@ -305,7 +307,6 @@
   }
 
   /*-----------------------------------------*/
-
   .testimonials__navigation {
     display: none;
   }
@@ -373,6 +374,8 @@
   .footer__top {
     padding: 80px 0;
 }
+
+
 }
 
 
@@ -385,6 +388,10 @@
 
   .header__top {
     margin-bottom: 40px;
+  }
+
+  .title {
+    font-size: 32px;
   }
 
   /*---------------------------------------------*/
@@ -410,10 +417,7 @@
     padding: 40px;
   }
 
-  .testimonials__text {
-    font-size: 17px;
-    line-height: 24px;
-  }
+
 
   .testimonials__person-name {
     font-size: 16px;
@@ -453,11 +457,25 @@
   .contacts__info-link {
     font-size: 18px;
     line-height: 36px;
+    white-space: initial;
+  }
 
+    .contacts__title {
+      line-height: 50px;
+      margin-bottom: 50px;
   }
 
 
+  
+  /*---------------------------------------------*/
 
+  .testimonials__title {
+    margin-bottom: 40px;
+  }
+
+  .footer__left {
+      margin-right: 0;
+  }
 
 
 
@@ -506,10 +524,27 @@
     margin-bottom: 70px;
   }
 
+  .blog__filter-btn {
+    font-size: 20px;
+}
+
+.blog__title {
+  margin-bottom: 28px;
+}
+
+.testimonials__text {
+  font-size: 18px;
+  line-height: 24px;
+}
+
   .footer__title {
     font-weight: 700;
     font-size: 28px;
     margin-bottom: 48px;
   }
+
+  /*-----------------------------------------*/
+
+
 
 }

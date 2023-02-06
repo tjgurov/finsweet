@@ -806,7 +806,6 @@ body._lock {
 }
 
 .testimonials__item {
-  max-width: 616px;
   padding: 72px;
   background: #FFFFFF;
   border: 1px solid rgba(172, 172, 172, 0.29);

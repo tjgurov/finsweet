@@ -43,7 +43,7 @@ $(function () {
     breakpoints: {
       // when window width is >= 320px
       320: {
-        slidesPerView: 1
+        slidesPerView: 1,
       },
       // when window width is >= 1000px
       1000: {
